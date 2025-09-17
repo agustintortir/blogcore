@@ -1,12 +1,13 @@
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\bin\Debug\net8.0\BlogCore.Models.deps.json
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\bin\Debug\net8.0\BlogCore.Models.dll
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\bin\Debug\net8.0\BlogCore.Models.pdb
+C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\obj\Debug\net8.0\BlogCore.Models.csproj.AssemblyReference.cache
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\obj\Debug\net8.0\BlogCore.Models.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\obj\Debug\net8.0\BlogCore.Models.AssemblyInfoInputs.cache
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\obj\Debug\net8.0\BlogCore.Models.AssemblyInfo.cs
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\obj\Debug\net8.0\BlogCore.Models.csproj.CoreCompileInputs.cache
+C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\obj\Debug\net8.0\BlogCore.Models.sourcelink.json
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\obj\Debug\net8.0\BlogCore.Models.dll
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\obj\Debug\net8.0\refint\BlogCore.Models.dll
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\obj\Debug\net8.0\BlogCore.Models.pdb
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\obj\Debug\net8.0\ref\BlogCore.Models.dll
-C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Models\obj\Debug\net8.0\BlogCore.Models.csproj.AssemblyReference.cache

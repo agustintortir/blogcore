@@ -11,6 +11,7 @@ C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.AccesoDatos\obj\Debug\net8
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.AccesoDatos\obj\Debug\net8.0\BlogCore.AccesoDatos.AssemblyInfoInputs.cache
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.AccesoDatos\obj\Debug\net8.0\BlogCore.AccesoDatos.AssemblyInfo.cs
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.AccesoDatos\obj\Debug\net8.0\BlogCore.AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.AccesoDatos\obj\Debug\net8.0\BlogCore.AccesoDatos.sourcelink.json
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.AccesoDatos\obj\Debug\net8.0\BlogCore.77B448E8.Up2Date
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.AccesoDatos\obj\Debug\net8.0\BlogCore.AccesoDatos.dll
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.AccesoDatos\obj\Debug\net8.0\refint\BlogCore.AccesoDatos.dll

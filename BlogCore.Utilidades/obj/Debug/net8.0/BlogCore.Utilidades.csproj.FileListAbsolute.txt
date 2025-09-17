@@ -5,6 +5,7 @@ C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Utilidades\obj\Debug\net8.
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Utilidades\obj\Debug\net8.0\BlogCore.Utilidades.AssemblyInfoInputs.cache
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Utilidades\obj\Debug\net8.0\BlogCore.Utilidades.AssemblyInfo.cs
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Utilidades\obj\Debug\net8.0\BlogCore.Utilidades.csproj.CoreCompileInputs.cache
+C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Utilidades\obj\Debug\net8.0\BlogCore.Utilidades.sourcelink.json
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Utilidades\obj\Debug\net8.0\BlogCore.Utilidades.dll
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Utilidades\obj\Debug\net8.0\refint\BlogCore.Utilidades.dll
 C:\Users\atortiramirez\source\repos\BlogCore\BlogCore.Utilidades\obj\Debug\net8.0\BlogCore.Utilidades.pdb

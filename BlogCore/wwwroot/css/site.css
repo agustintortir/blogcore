@@ -20,3 +20,77 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Searchbar pill */
+.searchbar {
+    border-radius: 9999px;
+    background: var(--bs-body-bg);
+    border: 1px solid rgba(0,0,0,.12);
+    transition: .2s ease;
+}
+
+    .searchbar:focus-within {
+        border-color: #198754; /* success */
+        box-shadow: 0 0 0 .2rem rgba(25,135,84,.15);
+    }
+
+.searchbar-icon {
+    background: transparent;
+    border: 0;
+    color: var(--bs-secondary-color);
+    padding-left: .95rem;
+    padding-right: .5rem;
+}
+
+.searchbar-input {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
+.searchbar-btn {
+    border-radius: 9999px;
+    padding: .45rem .9rem;
+    margin-left: .25rem;
+}
+
+@media (max-width: 576px) {
+    .searchbar {
+        width: 100%;
+    }
+}
+/* Quita el rectángulo azul/blanco del input en foco */
+.searchbar .form-control,
+.searchbar .form-control:focus {
+    background-color: transparent !important;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Mantiene el anillo de focus en el contenedor (accesible) */
+.searchbar:focus-within {
+    border-color: #198754;
+    box-shadow: 0 0 0 .2rem rgba(25,135,84,.15);
+}
+
+/* (Opcional) Afinar placeholder en dark navbars */
+.searchbar .form-control::placeholder {
+    color: var(--bs-secondary-color);
+    opacity: .8;
+}
+
+/* WebKit: quita adornos del input type=search */
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration {
+        display: none;
+    }
+

@@ -1,22 +1,40 @@
-using System.Diagnostics;
+using BlogCore.AccesoDatos.Data.Repository.IRepository;
 using BlogCore.Models;
+using BlogCore.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace BlogCore.Areas.Cliente.Controllers
 {
     [Area("Cliente")]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IContenedorTrabajo _contenedorTrabajo;
+
+        public HomeController(IContenedorTrabajo contenedorTrabajo)
         {
-            _logger = logger;
+            _contenedorTrabajo = contenedorTrabajo;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            HomeVM homeVM = new HomeVM()
+            {
+                Sliders = _contenedorTrabajo.Slider.GetAll(),
+                ListaArticulos = _contenedorTrabajo.Articulo.GetAll(includeProperties: "Categoria")
+            };
+
+            ViewBag.IsHome = true;
+            return View(homeVM);
+        }
+
+        [HttpGet]
+        public IActionResult Detalles(int id)
+        {
+            var articuloDesdeDb = _contenedorTrabajo.Articulo.Get(id);
+            return View(articuloDesdeDb);
         }
 
         public IActionResult Privacy()

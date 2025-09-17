@@ -19,15 +19,15 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link active" asp-area="Cliente" asp-controller="Home" asp-action="Index">
                                 Inicio
                                 <span class="visually-hidden">(current)</span>
                             </a>
@@ -43,14 +43,30 @@
                             </div>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-sm-2" type="search" placeholder="Ingrese busqueda">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                    <form class="ms-lg-3 my-2 my-lg-0" role="search">
+                        <div class="input-group searchbar shadow-sm">
+                            <span class="input-group-text searchbar-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input id="navbar-search" class="form-control searchbar-input"
+                                   type="search" placeholder="Buscá productos..."
+                                   aria-label="Buscar">
+                            <button class="btn btn-success searchbar-btn" type="submit">
+                                <span class="d-none d-sm-inline">Buscar</span>
+                                <i class="fa-solid fa-arrow-right-long d-sm-none"></i>
+                            </button>
+                        </div>
                     </form>
+
                 </div>
                 <partial name="_LoginPartial" />
             </div>
-          <</nav>
+          </nav>
+        <!--Aqui vista parcial Slider -->
+        @if (ViewBag.IsHome == true)
+        {
+        <partial name="_Slider" />            
+        }
     </header>
     <div class="container">
         <main role="main" class="pb-3">
