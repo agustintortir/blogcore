@@ -57,13 +57,15 @@
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
             <!--Selector de Roles-->
+                                    @if(User.IsInRole(CNT.Administrador)){
             <div class="form-group row">
                 <div class="col-6"><h4>Seleccionar Rol de usuario</h4></div>
                 <div class="col-5">
-                    <input type="radio" name="radUsuarioRole" value="@CNT.Administrador" /> @CNT.Administrador
-                    <input type="radio" name="radUsuarioRole" value="@CNT.Registrado" /> @CNT.Registrado
+                    <input type="radio" name="radRolUsuario" value="@CNT.Administrador" /> @CNT.Administrador
+                    <input type="radio" name="radRolUsuario" value="@CNT.Registrado" /> @CNT.Registrado
                 </div>
             </div>
+                                    }
             <div class="text-center">
                 <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Registro</button>
             </div>

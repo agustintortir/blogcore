@@ -157,25 +157,29 @@ namespace BlogCore.Areas.Identity.Pages.Account
 
             if (result.Succeeded)
             {
-                // Asignar rol
-
+                // … luego de CreateAsync y dentro de if (result.Succeeded)
                 if (!await _roleManager.RoleExistsAsync(CNT.Administrador))
                 {
                     await _roleManager.CreateAsync(new IdentityRole(CNT.Administrador));
+                }
+                if (!await _roleManager.RoleExistsAsync(CNT.Registrado))
+                {
                     await _roleManager.CreateAsync(new IdentityRole(CNT.Registrado));
                 }
+                if (!await _roleManager.RoleExistsAsync(CNT.Cliente))
+                {
+                    await _roleManager.CreateAsync(new IdentityRole(CNT.Cliente));
+                }
 
-                // Validar y asignar rol
+                // Qué rol asignar
                 string rol = Request.Form["radRolUsuario"].ToString();
                 if (rol == CNT.Administrador)
                     await _userManager.AddToRoleAsync(user, CNT.Administrador);
                 else if (rol == CNT.Registrado)
-                {
                     await _userManager.AddToRoleAsync(user, CNT.Registrado);
-                } else
-                {
-                    await _userManager.AddToRoleAsync(user, CNT.Cliente);
-                } 
+                else
+                    await _userManager.AddToRoleAsync(user, CNT.Cliente); // default
+
 
                 //    _logger.LogInformation("User created a new account with password.");
 

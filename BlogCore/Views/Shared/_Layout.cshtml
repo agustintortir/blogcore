@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using BlogCore.Utilidades
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -32,6 +33,9 @@
                                 <span class="visually-hidden">(current)</span>
                             </a>
                         </li>
+
+
+                        @if(User.IsInRole(CNT.Administrador)){
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Administrar Contenidos</a>
                             <div class="dropdown-menu">
@@ -42,14 +46,15 @@
 
                             </div>
                         </li>
+                        }
                     </ul>
-                    <form class="ms-lg-3 my-2 my-lg-0" role="search">
+                    <form class="ms-lg-3 my-2 my-lg-0" asp-controller="Home" asp-action="ResultadoBusqueda" method="get" role="search">
                         <div class="input-group searchbar shadow-sm">
                             <span class="input-group-text searchbar-icon">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </span>
                             <input id="navbar-search" class="form-control searchbar-input"
-                                   type="search" placeholder="Buscá productos..."
+                                   type="text" name="searchString" placeholder="Buscá productos..."
                                    aria-label="Buscar">
                             <button class="btn btn-success searchbar-btn" type="submit">
                                 <span class="d-none d-sm-inline">Buscar</span>

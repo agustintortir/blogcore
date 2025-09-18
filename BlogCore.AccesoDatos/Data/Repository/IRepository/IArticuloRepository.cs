@@ -9,5 +9,6 @@ namespace BlogCore.AccesoDatos.Data.Repository.IRepository
 {
     public interface IArticuloRepository :IRepository<Articulo>
     {
+        IQueryable<Articulo> asQueryable();
         void Update(Articulo articulo);    }
 }

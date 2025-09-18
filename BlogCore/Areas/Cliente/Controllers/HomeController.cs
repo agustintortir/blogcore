@@ -30,6 +30,25 @@ namespace BlogCore.Areas.Cliente.Controllers
             return View(homeVM);
         }
 
+        //Buscador
+        [HttpGet]
+        public IActionResult ResultadoBusqueda(string searchString, int page = 1, int pageSize = 6)
+        {
+            var articulos = _contenedorTrabajo.Articulo.asQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                articulos = articulos.Where(e => e.Nombre.Contains(searchString));
+            }
+
+            var paginatedEntries = articulos.Skip((page - 1) * pageSize).Take(pageSize);
+
+
+            var model = new ListaPaginada<Articulo>(paginatedEntries.ToList(), articulos.Count(), page, pageSize, searchString);
+            return View();
+        }
+
+
         [HttpGet]
         public IActionResult Detalles(int id)
         {
